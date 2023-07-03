@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hozaifa's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Hozaifa's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="/">contact me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hello, My name is <span class="purple">Hozaifa Shakeel</span> and i
+          know <br />
+          <span id="element"></span
+          ><!-- Setup and start animation! -->
+          <script>
+            var typed = new Typed("#element", {
+              strings: [
+                "Web Development.",
+                "Data Science.",
+                "AI.",
+                "Machine Learning.",
+              ],
+              typeSpeed: 50,
+              loop: true,
+            });
+          </script>
+        </div>
+        <div class="rightsection">
+          <img src="bg.png" width=125%; margin: 50px 0;>
+        </div>
+      </section>
+      <hr width="70%" />
+      <br />
+      
+    </main>
+  </body>
+</html>
