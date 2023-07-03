@@ -1,80 +1,93 @@
-* {animation: fadeIn 3s;
-    padding: 0;
-    margin: 0;
+* {
+  animation: fadeIn 3s;
+  padding: 0;
+  margin: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 7vh;
+  background-color: rgb(6, 6, 117);
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  color: lavender;
+  font-size: 1.2rem;
+}
+.sociallinks {
+  display: flex;
+  justify-content: center;
+}
+.sociallinks ul {
+  display: flex;
+}
+.sociallinks ul li {
+  list-style: none;
+}
+.left {
+  font-size: 2rem;
+}
+.firstsection {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.firstsection div {
+  width: 30%;
+}
+.leftsection {
+  font-size: 3rem;
+  word-wrap: break-word;
+}
+.rightsection {
+}
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgb(0, 0, 33);
+  color: white;
+}
+.purple {
+  color: purple;
+}
+#element {
+  color: purple;
+}
+hr {
+  margin-left: 15%;
+  margin-top: 2%;
+}
+h1 {
+  text-align: center;
+}
+.secondsection {
+  margin-left: 11.5%;
+}
+.secondsection ol li a {
+  text-decoration: none;
+  color: lavender;
+  font-size: large;
+}
+#project {
+  color: lightyellow;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 7vh;
-    background-color: rgb(6, 6, 117);
+  100% {
+    opacity: 1;
   }
-  nav ul {
-    display: flex;
-    justify-content: center;
-  }
-  nav ul li {
-    list-style: none;
-    margin: 0 23px;
-  }
-  nav ul li a{
-    text-decoration: none;
-    color: white;
-  }
-  nav ul li a:hover{
-    color: lavender;
-    font-size: 1.2rem;
-  }
-  .left {
-    font-size: 2rem;
-  }
-  .firstsection {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 100px;
-  }
-  .firstsection div {
-    width: 30%;
-  }
-  .leftsection {
-    font-size: 3rem;
-    word-wrap: break-word;
-  }
-  .rightsection {
-  }
-  body {
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    background-color: rgb(0, 0, 33);
-    color: white;
-  }
-  .purple{
-    color: purple;
-  }
-  #element{
-    color: purple;
-  }
-  hr{
-    margin-left: 15%;
-    margin-top: 2%;
-  }
-  h1{
-    text-align: center;
-  }
-  .secondsection{
-    margin-left: 11.5%;
-  }
-  .secondsection ol li a{
-    text-decoration: none;
-    color: lavender;
-    font-size: large;
-  }
-  #project{
-    color: lightyellow;
-  }
-  @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
-  
+}
