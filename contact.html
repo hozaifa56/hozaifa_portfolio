@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="faivcon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hozaifa's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Hozaifa's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">contact me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="about">
+      <div class="section-title"><br><br><br>
+        <h2>
+          <center>Contact Me</center>
+        </h2>
+      </div>
+      <div class="line"></div>
+      <div class="box"></div>
+    </div>
+    <div class="container">
+      <form onsubmit="sendEmail(); reset(); return false;">
+        <input type="text" id="name" placeholder=" Your Name" required /><br />
+        <input
+          type="email"
+          id="email"
+          placeholder=" Your Email"
+          required
+        /><br />
+        <input
+          type="text"
+          id="phone"
+          placeholder=" Phone Number"
+          required
+        /><br />
+        <textarea id="message" rows="4"></textarea><br />
+        <button id="send" type="submit">Send</button>
+      </form>
+    </div>
+    <footer>
+      <hr width="70%" />
+      <br />
+      <p><center>Hozaifa Shakeel</center></p>
+      <center>© Copyright Hozaifa Shakeel. All Rights Reserved</center>
+      <br />
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.elasticmail.com",
+          Username: "hozaifashakeel0@gmail.com",
+          Password: "19C88FF0746FFD7E17D75E082D8BCD237CC6",
+          To: "hozaifas740@outlook.com",
+          From: document.getElementById("email").value,
+          Subject: "New contact",
+          Body: "Name: "+document.getElementById("name").value
+          +"<br> Email: "+document.getElementById("email").value
+          +"<br> Phone: "+document.getElementById("phone").value
+          +"<br> Message: "+document.getElementById("message").value,
+        }).then((message) => alert("message sent"));
+      }
+    </script>
+  </body>
+</html>
