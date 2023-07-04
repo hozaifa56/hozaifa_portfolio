@@ -33,11 +33,12 @@
     </div>
     <div class="container">
       <form onSubmit="submit" name="contact" method="POST" data-netlify="true">
-        <input type="text" id="name" name="name" placeholder=" Your Name" required /><br />
+        <input type="text" id="name" name="name" autocomplete="off" placeholder=" Your Name" required /><br />
         <input
           type="email"
           id="email"
           name="email"
+          autocomplete="off"
           placeholder=" Your Email"
           required
         /><br />
@@ -45,6 +46,7 @@
           type="text"
           id="phone"
           name="phone"
+          autocomplete="off"
           placeholder=" Phone Number"
           required
         /><br />
