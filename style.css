@@ -75,6 +75,10 @@ h1 {
 .secondsection {
   margin-left: 11.5%;
 }
+.secondsection img {
+  width: 50%;
+  height: 50%;
+}
 .secondsection ol li a {
   text-decoration: none;
   color: lavender;
@@ -90,4 +94,49 @@ h1 {
   100% {
     opacity: 1;
   }
+}
+.project {
+  font-size: larger;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header,
+.project {
+  position: relative;
+  z-index: 2;
+}
+
+/* Style for the line */
+.line {
+  margin-left: 45%;
+  align-items: center;
+  height: 2px;
+  width: 10%;
+  background-color: white;
+}
+
+/* Style for the blue box */
+.box {
+  position: absolute;
+  top: calc(30%-3px); /* Adjust the value as needed */
+  left: calc(50% - 20px); /* Adjust the value as needed */
+  width: 40px;
+  height: 3px;
+  background-color: yellow;
+}
+
+.contentabout{
+    display: flex;
+    margin-top: 5%;
+}
+.mydp{
+    margin-left: 10%;
+}
+.written{
+height: 50%;
+width: 50%;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+margin-left: 5%;
+}
+.col-lg-6 ul{
+    list-style: none;
 }

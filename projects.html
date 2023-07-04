@@ -1,39 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hozaifa's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-</head>
-<body>
-    <div class="project"><h1><u>Work Experience</u></h1>
-      <br />
-      <section class="secondsection">
-        <ol>
-          <li>
-            <a href="https://github.com/hozaifa56/diabetespredictionDSModel"
-              ><span id="project">Diabetes Prediction Model:</span> This Model
-              predicts whether a person will have diabetes or not based on
-              different parametres.
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/hozaifa56/primevideo"
-              ><span id="project">Prime Video Homepage clone:</span> I tried to replicate the Homepage of
-              Amazon primevideo and when we hover over movie thumbnails we are
-              shown IMDB ratings.</a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/hozaifa56/Lifestyle-Gym"
-              ><span id="project">Lifestyle Gym: </span> A website for Gym that has a login credential and
-              can calculate BMI of a person when weight and height entered.</a
-            >
-          </li>
-        </ol>
-      </section>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Hozaifa's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="/">contact me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div id="bd-bg"><br>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+      <script>
+        VANTA.DOTS({
+          el: "#bd-bg",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: true,
+          minHeight: 2000, // Adjust this value to change the minimum height
+          minWidth: 2000, // Adjust this value to change the minimum width
+          scale: 1.0,
+          scaleMobile: 1.0,
+          backgroundColor: 0x80645,
+          spacing: 13.0,
+          showLines: false,
+        });
+      </script>
+      <div class="project">
+        <h1><u>Work Experience</u></h1>
+        <br />
+        <section class="secondsection">
+          <ol>
+            <li>
+              <a href="https://github.com/hozaifa56/diabetespredictionDSModel"
+                ><span id="project">Diabetes Prediction Model:</span> This Model
+                predicts whether a person will have diabetes or not based on
+                different parametres. <br /><br /><img src="dp.png" />
+              </a>
+            </li>
+            <br /><br />
+            <li>
+              <a href="https://github.com/hozaifa56/primevideo"
+                ><span id="project">Prime Video Homepage clone:</span> I tried
+                to replicate the Homepage of Amazon primevideo and when we hover
+                over movie thumbnails we are shown IMDB ratings. <br /><br />
+                <img src="pv.jpeg"
+              /></a>
+            </li>
+            <br /><br />
+            <li>
+              <a href="https://github.com/hozaifa56/Lifestyle-Gym"
+                ><span id="project">Lifestyle Gym: </span> A website for Gym
+                that has a login credential and can calculate BMI of a person
+                when weight and height entered. <br /><br /><img src="gym.jpeg"
+              /></a>
+            </li>
+          </ol>
+        </section>
+      </div>
     </div>
-</body>
+    <footer>
+      <hr width="70%" />
+      <br />
+      <p><center>Hozaifa Shakeel</center></p>
+      <center>© Copyright Hozaifa Shakeel. All Rights Reserved</center>
+      <br />
+    </footer>
+  </body>
 </html>
