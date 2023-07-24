@@ -6,25 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hozaifa's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   </head>
-  <body>
+  <body style="background-color: rgb(0,0, 33);">
     <header>
-      <nav>
-        <div class="left">Hozaifa's Portfolio</div>
-        <div class="right">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">contact me</a></li>
-          </ul>
+      <nav class="navbar navbar-expand-lg bg-info">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Hozaifa's Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="contact.html">Contact Me</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
     <div class="about">
       <div class="section-title"><br><br><br>
-        <h2>
+        <h2 style="color: white;">
           <center>Contact Me</center>
         </h2>
       </div>
@@ -54,8 +68,8 @@
         <button id="send" type="submit">Send</button>
       </form>
     </div>
-    <footer>
-      <hr width="70%" />
+    <footer style="color: white;">
+      <center><hr width="70%" /></center>
       <br />
       <p><center>Hozaifa Shakeel</center></p>
       <center>© Copyright Hozaifa Shakeel. All Rights Reserved</center>
@@ -78,5 +92,7 @@
         }).then((message) => alert("message sent"));
       }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
 </html>
