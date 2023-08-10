@@ -176,6 +176,9 @@ form input, form textarea{
     width: 60%;
     height: 70vh;
   }
+  .leftsection{
+    font-size: small;
+  }
 }
 
 @media screen and (min-width: 1025px) {
@@ -187,5 +190,12 @@ form input, form textarea{
   }
 }
 a:hover{
-  font-size: 1.1rem;
+  background-color: orange;
+}
+.projectlist{
+  margin-left: 10%;
+}
+.projectlist h3{
+  color: orange;
+  text-decoration: underline;
 }
